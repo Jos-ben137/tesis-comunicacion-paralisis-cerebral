@@ -253,20 +253,21 @@ h3 {
   display: grid;
   place-items: center;
   aspect-ratio: 1 / 1;
-  max-width: 360px;
+  max-width: 390px;
   margin: 0 auto 22px;
-  background:
-    radial-gradient(circle, rgba(54, 242, 193, 0.12), transparent 48%),
-    linear-gradient(180deg, rgba(74, 168, 255, 0.08), rgba(155, 124, 255, 0.08));
+  overflow: hidden;
+  background: #020607;
   border: 1px solid rgba(54, 242, 193, 0.28);
-  border-radius: 50%;
-  box-shadow: inset 0 0 50px rgba(74, 168, 255, 0.14), 0 0 36px rgba(54, 242, 193, 0.12);
+  border-radius: 8px;
+  box-shadow: inset 0 0 50px rgba(74, 168, 255, 0.14), 0 0 46px rgba(54, 242, 193, 0.16);
 }
 
 .wireface {
-  width: min(96%, 340px);
-  height: auto;
-  filter: drop-shadow(0 0 28px rgba(74, 168, 255, 0.22));
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+  filter: saturate(1.15) contrast(1.08) drop-shadow(0 0 28px rgba(74, 168, 255, 0.22));
 }
 
 .preview-stack {
