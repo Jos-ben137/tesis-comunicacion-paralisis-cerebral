@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vision artificial para comunicacion en paralisis cerebral</title>
+  <meta name="description" content="Complemento web para poster de tesis sobre vision artificial, reconocimiento facial y comunicacion aumentativa en paralisis cerebral.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      if (window.mermaid) {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: "base",
+          themeVariables: {
+            primaryColor: "#e9f7ef",
+            primaryTextColor: "#15211b",
+            primaryBorderColor: "#2f9e44",
+            lineColor: "#355070",
+            secondaryColor: "#fff4d6",
+            tertiaryColor: "#edf2ff",
+            fontFamily: "Inter, Segoe UI, Arial, sans-serif"
+          }
+        });
+      }
+    });
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand-mark">FER</span>
+      <span>Complemento del poster</span>
+    </a>
+    <nav aria-label="Secciones">
+      <a href="#poster">Poster</a>
+      <a href="#avance">Avance 80%</a>
+      <a href="#problema">Idea central</a>
+      <a href="#sistema">Sistema</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#github-pages">GitHub Pages</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Poster de tesis | Jose Antonio Benavides Ortega</p>
+        <h1>Vision artificial para apoyar la comunicacion en personas con paralisis cerebral.</h1>
+        <p class="lead">
+          Esta pagina acompana la presentacion del poster y el avance de investigacion
+          al 80%. Explica, con mas espacio, como un prototipo de Reconocimiento de
+          Expresiones Faciales puede traducir estados como calma, alegria o dolor en
+          pictogramas y mensajes de voz.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#guia">Entender en 2 minutos</a>
+          <a class="button secondary" href="assets/poster-vision-artificial-paralisis-cerebral.pdf">Abrir poster PDF</a>
+          <a class="button secondary" href="assets/proyecto-investigacion-avance-80-integrado.pdf">Abrir avance 80%</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Resumen visual del prototipo">
+        <div class="signal-card camera">
+          <span class="card-label">Camara</span>
+          <strong>Webcam 30 FPS</strong>
+          <small>OpenCV + MediaPipe</small>
+        </div>
+        <div class="signal-card model">
+          <span class="card-label">Modelo</span>
+          <strong>478 landmarks</strong>
+          <small>68 metricas geometricas</small>
+        </div>
+        <div class="signal-card message">
+          <span class="card-label">Salida</span>
+          <strong>Calma, alegria, dolor</strong>
+          <small>Pictograma + voz</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Indicadores principales">
+      <div>
+        <strong>478</strong>
+        <span>landmarks faciales en tiempo real</span>
+      </div>
+      <div>
+        <strong>68</strong>
+        <span>metricas geometricas por muestra</span>
+      </div>
+      <div>
+        <strong>34 ms</strong>
+        <span>latencia aproximada extremo a extremo</span>
+      </div>
+      <div>
+        <strong>2 min</strong>
+        <span>calibracion personalizada sugerida</span>
+      </div>
+    </section>
+
+    <section id="poster" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Material de exposicion</p>
+        <h2>Poster y lectura guiada</h2>
+      </div>
+      <div class="two-column poster-layout">
+        <div>
+          <p>
+            El poster resume el analisis de viabilidad: usar vision artificial como
+            base tecnica para una herramienta de Comunicacion Aumentativa y Alternativa
+            en personas con paralisis cerebral.
+          </p>
+          <p>
+            Durante la presentacion, esta pagina funciona como segunda capa: muestra
+            el flujo completo, amplia la metodologia y deja visibles las metricas
+            que en el poster aparecen de forma compacta.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="assets/poster-vision-artificial-paralisis-cerebral.pdf">Descargar poster</a>
+            <a class="button secondary" href="#sistema">Ver flujo tecnico</a>
+          </div>
+        </div>
+        <div class="poster-frame">
+          <iframe title="Poster de tesis" src="assets/poster-vision-artificial-paralisis-cerebral.pdf"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="avance" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">Documento base</p>
+        <h2>Avance de investigacion al 80%</h2>
+      </div>
+      <div class="two-column poster-layout">
+        <div>
+          <p>
+            El avance formal desarrolla el proyecto como
+            <strong>Vision Artificial y Registro Multimodal para Comunicacion y
+            Rehabilitacion en Personas con Paralisis Cerebral</strong>. Esta pagina
+            toma ese documento como base y lo convierte en una explicacion navegable.
+          </p>
+          <p>
+            La pregunta central es si resulta viable un sistema FER en tiempo real,
+            ejecutable en hardware de consumo, con landmarks de MediaPipe y
+            clasificadores ligeros entrenados con datasets publicos aumentados.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="assets/proyecto-investigacion-avance-80-integrado.pdf">Descargar avance</a>
+            <a class="button secondary" href="#metas">Ver metas del avance</a>
+          </div>
+        </div>
+        <div class="poster-frame">
+          <iframe title="Avance de investigacion al 80%" src="assets/proyecto-investigacion-avance-80-integrado.pdf"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="guia" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">Guia rapida</p>
+        <h2>Como leer el proyecto en 2 minutos</h2>
+      </div>
+      <div class="talk-track">
+        <article>
+          <span>1</span>
+          <h3>Problema</h3>
+          <p>La paralisis cerebral puede limitar la comunicacion verbal y dificultar que el cuidador identifique dolor, calma o bienestar.</p>
+        </article>
+        <article>
+          <span>2</span>
+          <h3>Propuesta</h3>
+          <p>Usar una webcam, MediaPipe y modelos ligeros para reconocer expresiones faciales y convertir el estado detectado en pictogramas o voz.</p>
+        </article>
+        <article>
+          <span>3</span>
+          <h3>Viabilidad</h3>
+          <p>El prototipo responde en menos de 34 ms y no requiere GPU dedicada para la inferencia.</p>
+        </article>
+        <article>
+          <span>4</span>
+          <h3>Cuidado etico</h3>
+          <p>La herramienta apoya la comunicacion, pero no reemplaza el criterio clinico ni la observacion humana.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="problema" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Contexto</p>
+        <h2>La idea central del poster</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>
+            Las personas con paralisis cerebral pueden tener dificultades motoras,
+            del habla y de expresion voluntaria. En terapia, esto puede complicar la
+            identificacion oportuna de incomodidad, fatiga o dolor.
+          </p>
+          <p>
+            La tesis explora una ayuda tecnologica no invasiva: observar patrones
+            faciales para generar senales interpretables, sin sustituir el criterio
+            clinico ni la observacion del cuidador.
+          </p>
+        </div>
+        <div class="callout">
+          <h3>Pregunta guia</h3>
+          <p>
+            ¿Es viable usar vision artificial en tiempo real como base para una
+            herramienta CAA orientada a personas con paralisis cerebral?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="metas" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Metas M1-M5</p>
+        <h2>Lo que demuestra el avance</h2>
+      </div>
+      <div class="milestone-list">
+        <article>
+          <span>M1</span>
+          <h3>Pipeline de captura</h3>
+          <p>MediaPipe Face Mesh extrae 478 landmarks en tiempo real, con funcionamiento esperado de al menos 25 FPS.</p>
+        </article>
+        <article>
+          <span>M2</span>
+          <h3>Dataset aumentado</h3>
+          <p>Construccion de datos para dolor, alegria y neutral usando fuentes publicas como RAF-DB y CK+ con aumentacion clasica.</p>
+        </article>
+        <article>
+          <span>M3</span>
+          <h3>Modelo FER ligero</h3>
+          <p>Comparacion entre clasificadores sobre landmarks geometricos y enfoque de imagen normalizada, considerando precision y latencia.</p>
+        </article>
+        <article>
+          <span>M4</span>
+          <h3>Interfaz CAA</h3>
+          <p>GUI que traduce la expresion detectada a pictograma o mensaje de voz personalizable para el cuidador.</p>
+        </article>
+        <article>
+          <span>M5</span>
+          <h3>Viabilidad clinica</h3>
+          <p>Analisis de limitaciones y ruta futura para validar el sistema con datos reales de personas con paralisis cerebral.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sistema" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">Arquitectura</p>
+        <h2>Del rostro al mensaje</h2>
+      </div>
+      <div class="diagram-panel">
+        <pre class="mermaid">
+flowchart LR
+  A[Captura de video] --> B[Deteccion de rostro]
+  B --> C[478 landmarks faciales]
+  C --> D[68 rasgos geometricos]
+  D --> E{Clasificador}
+  E --> F[Alegria]
+  E --> G[Calma]
+  E --> H[Dolor]
+  F --> I[Tarjeta visual]
+  G --> I
+  H --> I
+  I --> J[Mensaje de voz para cuidador]
+        </pre>
+      </div>
+      <div class="feature-grid">
+        <article>
+          <h3>Extraccion facial</h3>
+          <p>MediaPipe Face Mesh localiza 478 puntos 3D del rostro y el extractor calcula distancias, EAR, MAR y proporciones utiles.</p>
+        </article>
+        <article>
+          <h3>Modelos comparados</h3>
+          <p>El poster plantea clasificadores ligeros SVM/MLP entrenados con datasets publicos aumentados como RAF-DB y CK+.</p>
+        </article>
+        <article>
+          <h3>Interfaz CAA</h3>
+          <p>La interfaz muestra una tarjeta de estado y reproduce un mensaje hablado, pensado para sesiones con cuidador o terapeuta.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Metodo</p>
+        <h2>Flujo de investigacion</h2>
+      </div>
+      <div class="diagram-panel compact">
+        <pre class="mermaid">
+timeline
+  title Etapas del prototipo
+  section Datos
+    Captura y etiquetado : calma, alegria, dolor
+    Extraccion de caracteristicas : 68 variables geometricas
+  section Modelado
+    Entrenamiento rapido : SVM y MLP
+    Entrenamiento profundo : CNN ligera
+  section Validacion
+    Matrices de confusion : analisis por clase
+    Curvas ROC : comparacion de discriminacion
+  section Uso
+    Interfaz CAA : tarjeta visual y voz
+    Registro GSR : contexto fisiologico durante terapia
+        </pre>
+      </div>
+    </section>
+
+    <section id="resultados" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">Evidencia</p>
+        <h2>Resultados y lectura para la presentacion</h2>
+      </div>
+      <p class="section-intro">
+        Estos resultados complementan el poster con evidencia generada en el repositorio.
+        La interpretacion principal no es que el sistema diagnostique dolor, sino que
+        muestra una base tecnica viable para apoyar la comunicacion.
+      </p>
+      <div class="results-table" role="table" aria-label="Metricas principales">
+        <div role="row" class="table-head">
+          <span role="columnheader">Modelo</span>
+          <span role="columnheader">Accuracy</span>
+          <span role="columnheader">F1 macro</span>
+          <span role="columnheader">AUC ROC</span>
+          <span role="columnheader">Nota</span>
+        </div>
+        <div role="row">
+          <span role="cell">SVM</span>
+          <span role="cell">0.6885</span>
+          <span role="cell">0.6762</span>
+          <span role="cell">0.8652</span>
+          <span role="cell">Mejor equilibrio general en la evaluacion rapida del repo.</span>
+        </div>
+        <div role="row">
+          <span role="cell">MLP</span>
+          <span role="cell">0.6823</span>
+          <span role="cell">0.6724</span>
+          <span role="cell">0.8592</span>
+          <span role="cell">Inferencia muy rapida por muestra.</span>
+        </div>
+        <div role="row">
+          <span role="cell">SmallEmotionCNN</span>
+          <span role="cell">0.5926</span>
+          <span role="cell">0.6011</span>
+          <span role="cell">0.8826</span>
+          <span role="cell">Entrenada en GPU, buena separacion ROC.</span>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <figure>
+          <img src="files/resultados_rapidos/matriz_confusion_svm.png" alt="Matriz de confusion del modelo SVM">
+          <figcaption>Matriz de confusion SVM</figcaption>
+        </figure>
+        <figure>
+          <img src="files/resultados_rapidos/roc_curves.png" alt="Curvas ROC de SVM y MLP">
+          <figcaption>Curvas ROC de modelos clasicos</figcaption>
+        </figure>
+        <figure>
+          <img src="files/resultados_cnn_train_test/historial_entrenamiento.png" alt="Historial de entrenamiento de la CNN">
+          <figcaption>Entrenamiento de CNN ligera</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">GSR</p>
+        <h2>Registro fisiologico como contexto</h2>
+      </div>
+      <div class="two-column">
+        <div class="diagram-panel">
+          <pre class="mermaid">
+flowchart TB
+  A[Sesion de terapia] --> B[Arduino GSR]
+  A --> C[Camara]
+  B --> D[session.csv]
+  C --> E[Capturas JPG]
+  D --> F[Analisis posterior]
+  E --> F
+  F --> G[Momentos de activacion fisiologica]
+          </pre>
+        </div>
+        <div>
+          <p>
+            El registro GSR/EDA se plantea como indicador de activacion fisiologica,
+            no como detector directo de dolor. Su valor esta en sincronizar datos con
+            capturas y eventos para revisar momentos relevantes despues de la sesion.
+          </p>
+          <p>
+            Esta parte abre una linea de trabajo para comparar expresiones faciales,
+            cambios fisiologicos y observaciones terapeuticas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="github-pages" class="section publish">
+      <div class="section-heading">
+        <p class="eyebrow">Publicacion</p>
+        <h2>Lista para GitHub Pages</h2>
+      </div>
+      <ol class="steps">
+        <li>Sube `index.html`, `styles.css`, `.nojekyll` y las imagenes de resultados al repositorio.</li>
+        <li>En GitHub entra a <strong>Settings > Pages</strong>.</li>
+        <li>Selecciona <strong>Deploy from a branch</strong>, rama <strong>main</strong> y carpeta <strong>/root</strong>.</li>
+        <li>Guarda los cambios y espera a que GitHub genere la URL publica.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Tesis de comunicacion en personas con paralisis cerebral | Prototipo CAA con vision por computadora.</p>
+  </footer>
+</body>
+</html>
