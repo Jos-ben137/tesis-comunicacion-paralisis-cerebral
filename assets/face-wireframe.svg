@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" role="img" aria-labelledby="title desc">
+  <title id="title">Rostro wireframe de vision artificial</title>
+  <desc id="desc">Cabeza frontal con malla facial azul, ojos claros y puntos de landmarks.</desc>
+  <defs>
+    <radialGradient id="skinGlow" cx="50%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#7be8ff" stop-opacity="0.24"/>
+      <stop offset="58%" stop-color="#2f9cff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#061117" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b7f4ff"/>
+      <stop offset="42%" stop-color="#54b8ff"/>
+      <stop offset="100%" stop-color="#2d77ff"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="headClip">
+      <path d="M320 50
+        C218 50 151 128 144 263
+        C138 382 176 525 248 590
+        C276 616 299 629 320 635
+        C341 629 364 616 392 590
+        C464 525 502 382 496 263
+        C489 128 422 50 320 50Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="640" height="760" fill="none"/>
+  <ellipse cx="320" cy="344" rx="236" ry="302" fill="url(#skinGlow)"/>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <path d="M166 288 C106 283 90 336 108 399 C122 449 153 467 177 446" stroke="#55b8ff" stroke-width="3"/>
+    <path d="M474 288 C534 283 550 336 532 399 C518 449 487 467 463 446" stroke="#55b8ff" stroke-width="3"/>
+    <path d="M320 50
+      C218 50 151 128 144 263
+      C138 382 176 525 248 590
+      C276 616 299 629 320 635
+      C341 629 364 616 392 590
+      C464 525 502 382 496 263
+      C489 128 422 50 320 50Z" stroke="url(#wire)" stroke-width="3.5"/>
+    <path d="M250 592 C247 645 238 684 205 724" stroke="#327fff" stroke-width="3"/>
+    <path d="M390 592 C393 645 402 684 435 724" stroke="#327fff" stroke-width="3"/>
+    <path d="M218 724 C272 698 368 698 422 724" stroke="#327fff" stroke-width="3"/>
+  </g>
+
+  <g clip-path="url(#headClip)" fill="none" stroke="url(#wire)" stroke-width="2.2" stroke-linecap="round" opacity="0.95">
+    <path d="M132 112 C197 86 253 74 320 74 C387 74 443 86 508 112"/>
+    <path d="M118 150 C191 128 250 119 320 119 C390 119 449 128 522 150"/>
+    <path d="M108 190 C184 172 246 164 320 164 C394 164 456 172 532 190"/>
+    <path d="M103 230 C180 216 244 210 320 210 C396 210 460 216 537 230"/>
+    <path d="M104 270 C180 260 244 255 320 255 C396 255 460 260 536 270"/>
+    <path d="M111 310 C185 303 247 299 320 299 C393 299 455 303 529 310"/>
+    <path d="M124 350 C194 345 252 342 320 342 C388 342 446 345 516 350"/>
+    <path d="M140 390 C204 386 257 384 320 384 C383 384 436 386 500 390"/>
+    <path d="M159 430 C216 426 263 424 320 424 C377 424 424 426 481 430"/>
+    <path d="M184 470 C232 466 271 464 320 464 C369 464 408 466 456 470"/>
+    <path d="M211 510 C248 506 282 504 320 504 C358 504 392 506 429 510"/>
+    <path d="M242 550 C269 546 294 544 320 544 C346 544 371 546 398 550"/>
+    <path d="M275 588 C293 585 307 584 320 584 C333 584 347 585 365 588"/>
+
+    <path d="M320 48 C316 132 314 207 315 284 C316 394 318 510 320 636"/>
+    <path d="M273 57 C250 143 240 224 244 314 C249 438 274 548 320 635"/>
+    <path d="M367 57 C390 143 400 224 396 314 C391 438 366 548 320 635"/>
+    <path d="M229 82 C201 167 190 250 201 340 C214 460 254 561 320 635"/>
+    <path d="M411 82 C439 167 450 250 439 340 C426 460 386 561 320 635"/>
+    <path d="M192 126 C166 209 160 292 181 381 C207 493 255 581 320 635"/>
+    <path d="M448 126 C474 209 480 292 459 381 C433 493 385 581 320 635"/>
+    <path d="M158 214 C156 302 177 412 221 514 C249 578 286 619 320 635"/>
+    <path d="M482 214 C484 302 463 412 419 514 C391 578 354 619 320 635"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <path d="M188 278 C216 246 266 247 293 279 C262 296 219 296 188 278Z" fill="#eaffff" fill-opacity="0.82" stroke="#b7f4ff" stroke-width="3"/>
+    <path d="M347 279 C374 247 424 246 452 278 C421 296 378 296 347 279Z" fill="#eaffff" fill-opacity="0.82" stroke="#b7f4ff" stroke-width="3"/>
+    <path d="M320 292 C306 350 285 390 275 428 C295 440 345 440 365 428 C355 390 334 350 320 292Z" stroke="#5be6ff" stroke-width="3"/>
+    <path d="M240 496 C278 518 362 518 400 496" stroke="#ff8b73" stroke-width="4"/>
+    <path d="M260 486 C294 476 346 476 380 486" stroke="#ffd0c4" stroke-width="2"/>
+    <path d="M213 251 C237 239 265 239 291 253" stroke="#7bd8ff" stroke-width="3"/>
+    <path d="M349 253 C375 239 403 239 427 251" stroke="#7bd8ff" stroke-width="3"/>
+  </g>
+
+  <g fill="#36f2c1" stroke="#061117" stroke-width="2" filter="url(#glow)">
+    <circle cx="188" cy="278" r="5"/>
+    <circle cx="293" cy="279" r="5"/>
+    <circle cx="347" cy="279" r="5"/>
+    <circle cx="452" cy="278" r="5"/>
+    <circle cx="320" cy="292" r="5"/>
+    <circle cx="275" cy="428" r="5"/>
+    <circle cx="365" cy="428" r="5"/>
+    <circle cx="240" cy="496" r="5"/>
+    <circle cx="400" cy="496" r="5"/>
+    <circle cx="320" cy="584" r="5"/>
+  </g>
+</svg>

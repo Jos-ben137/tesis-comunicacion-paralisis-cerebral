@@ -264,57 +264,9 @@ h3 {
 }
 
 .wireface {
-  width: min(92%, 330px);
+  width: min(96%, 340px);
   height: auto;
-  overflow: visible;
-}
-
-.wireface .face-glow path {
-  fill: rgba(74, 168, 255, 0.055);
-  stroke: rgba(54, 242, 193, 0.65);
-  stroke-width: 2.2;
-  filter: drop-shadow(0 0 14px rgba(74, 168, 255, 0.42));
-}
-
-.wireface .mesh path {
-  fill: none;
-  stroke: rgba(74, 168, 255, 0.72);
-  stroke-width: 1.15;
-  vector-effect: non-scaling-stroke;
-}
-
-.wireface .features path {
-  fill: none;
-  stroke: rgba(234, 255, 251, 0.86);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2.2;
-  vector-effect: non-scaling-stroke;
-}
-
-.wireface .features .eye {
-  fill: rgba(234, 255, 251, 0.13);
-  stroke: rgba(234, 255, 251, 0.92);
-}
-
-.wireface .features .nose {
-  stroke: rgba(54, 242, 193, 0.74);
-}
-
-.wireface .features .mouth {
-  stroke: rgba(255, 122, 92, 0.9);
-}
-
-.wireface .features .inner {
-  stroke: rgba(255, 196, 180, 0.72);
-  stroke-width: 1.4;
-}
-
-.wireface .landmarks circle {
-  fill: var(--mint);
-  stroke: #071113;
-  stroke-width: 1.5;
-  filter: drop-shadow(0 0 7px rgba(54, 242, 193, 0.8));
+  filter: drop-shadow(0 0 28px rgba(74, 168, 255, 0.22));
 }
 
 .preview-stack {
