@@ -68,16 +68,58 @@
           <span>Pipeline en tiempo real</span>
           <strong>34 ms</strong>
         </div>
-        <div class="face-map">
-          <span class="point p1"></span>
-          <span class="point p2"></span>
-          <span class="point p3"></span>
-          <span class="point p4"></span>
-          <span class="point p5"></span>
-          <span class="point p6"></span>
-          <span class="face-line eye-left"></span>
-          <span class="face-line eye-right"></span>
-          <span class="face-line mouth"></span>
+        <div class="face-map" aria-label="Malla facial 3D">
+          <svg class="wireface" viewBox="0 0 360 420" role="img" aria-labelledby="wireface-title">
+            <title id="wireface-title">Rostro wireframe con landmarks faciales</title>
+            <defs>
+              <clipPath id="faceClip">
+                <path d="M180 30 C104 30 65 86 62 174 C59 267 98 366 180 392 C262 366 301 267 298 174 C295 86 256 30 180 30 Z"/>
+              </clipPath>
+            </defs>
+            <g class="face-glow">
+              <path d="M180 30 C104 30 65 86 62 174 C59 267 98 366 180 392 C262 366 301 267 298 174 C295 86 256 30 180 30 Z"/>
+            </g>
+            <g class="mesh" clip-path="url(#faceClip)">
+              <path d="M48 72 C92 52 132 44 180 44 C228 44 268 52 312 72"/>
+              <path d="M42 106 C94 88 135 81 180 81 C225 81 266 88 318 106"/>
+              <path d="M39 142 C91 127 134 120 180 120 C226 120 269 127 321 142"/>
+              <path d="M40 178 C92 166 136 160 180 160 C224 160 268 166 320 178"/>
+              <path d="M45 214 C96 204 138 199 180 199 C222 199 264 204 315 214"/>
+              <path d="M55 250 C101 241 140 237 180 237 C220 237 259 241 305 250"/>
+              <path d="M70 286 C111 278 145 275 180 275 C215 275 249 278 290 286"/>
+              <path d="M92 322 C123 315 151 312 180 312 C209 312 237 315 268 322"/>
+              <path d="M123 356 C145 351 163 349 180 349 C197 349 215 351 237 356"/>
+              <path d="M180 25 C175 91 173 147 174 207 C175 273 177 334 180 398"/>
+              <path d="M142 34 C128 95 122 154 124 216 C126 281 143 337 180 392"/>
+              <path d="M218 34 C232 95 238 154 236 216 C234 281 217 337 180 392"/>
+              <path d="M108 55 C92 114 88 170 96 227 C106 296 134 351 180 392"/>
+              <path d="M252 55 C268 114 272 170 264 227 C254 296 226 351 180 392"/>
+              <path d="M82 96 C72 150 75 204 91 257 C108 314 139 360 180 392"/>
+              <path d="M278 96 C288 150 285 204 269 257 C252 314 221 360 180 392"/>
+              <path d="M61 170 C88 168 111 171 133 181"/>
+              <path d="M227 181 C249 171 272 168 299 170"/>
+              <path d="M126 250 C149 260 169 264 180 264 C191 264 211 260 234 250"/>
+            </g>
+            <g class="features">
+              <path class="eye" d="M92 172 C111 155 139 156 158 172 C139 183 112 183 92 172 Z"/>
+              <path class="eye" d="M202 172 C221 156 249 155 268 172 C248 183 221 183 202 172 Z"/>
+              <path class="nose" d="M180 178 C171 214 160 239 153 260 C167 268 193 268 207 260 C200 239 189 214 180 178 Z"/>
+              <path class="mouth" d="M124 305 C151 318 209 318 236 305"/>
+              <path class="mouth inner" d="M138 298 C162 291 198 291 222 298"/>
+            </g>
+            <g class="landmarks">
+              <circle cx="92" cy="172" r="3"/>
+              <circle cx="158" cy="172" r="3"/>
+              <circle cx="202" cy="172" r="3"/>
+              <circle cx="268" cy="172" r="3"/>
+              <circle cx="180" cy="178" r="3"/>
+              <circle cx="153" cy="260" r="3"/>
+              <circle cx="207" cy="260" r="3"/>
+              <circle cx="124" cy="305" r="3"/>
+              <circle cx="236" cy="305" r="3"/>
+              <circle cx="180" cy="349" r="3"/>
+            </g>
+          </svg>
         </div>
         <div class="preview-stack">
           <div><span>Entrada</span><strong>Webcam 30 FPS</strong></div>
